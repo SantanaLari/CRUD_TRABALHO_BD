@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="647.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PrincipalController">
+  <tabs>
+    <Tab text="Cadastro de evento">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="628.0">
+               <children>
+                  <Button fx:id="btnSalvarEvento" layoutX="15.0" layoutY="194.0" mnemonicParsing="false" onAction="#acaoEvento" text="Salvar" />
+                  <TextField fx:id="txtCodigoEvento" layoutX="24.0" layoutY="20.0" onAction="#acaoEvento" prefHeight="25.0" prefWidth="118.0" promptText="Codigo do evento" />
+                  <ScrollPane layoutX="15.0" layoutY="228.0">
+                     <content>
+                        <TextArea fx:id="taEvento" prefHeight="155.0" prefWidth="614.0" />
+                     </content>
+                  </ScrollPane>
+                  <TextField fx:id="txtHoraEvento" layoutX="154.0" layoutY="55.0" promptText="Hora" />
+                  <TextField fx:id="txtNumeroEvento" layoutX="442.0" layoutY="88.0" prefHeight="25.0" prefWidth="92.0" promptText="Numero" />
+                  <TextField fx:id="txtRuaEvento" layoutX="24.0" layoutY="88.0" prefHeight="25.0" prefWidth="405.0" promptText="Rua" />
+                  <TextField fx:id="txtDataEvento" layoutX="24.0" layoutY="55.0" prefHeight="25.0" prefWidth="118.0" promptText="Data" />
+                  <TextField fx:id="txtNomeEvento" layoutX="154.0" layoutY="20.0" prefHeight="25.0" prefWidth="478.0" promptText="Nome do evento" />
+                  <TextField fx:id="txtUfEvento" layoutX="548.0" layoutY="88.0" prefHeight="25.0" prefWidth="81.0" promptText="UF" />
+                  <Button fx:id="btnListareEvento" layoutX="191.0" layoutY="193.0" mnemonicParsing="false" onAction="#acaoEvento" text="Listar" />
+                  <Button fx:id="btnAtualizarEvento" layoutX="411.0" layoutY="194.0" mnemonicParsing="false" onAction="#acaoEvento" text="Atualizar" />
+                  <Button fx:id="btnExcluirEvento" layoutX="579.0" layoutY="194.0" mnemonicParsing="false" onAction="#acaoEvento" text="Excluir" />
+                  <TextField fx:id="txtCodigoIngresso" layoutX="24.0" layoutY="125.0" onAction="#acaoEvento" prefHeight="25.0" prefWidth="129.0" promptText="Codigo do ingresso" />
+                  <TextField fx:id="txtTipoIngresso" layoutX="162.0" layoutY="125.0" prefHeight="25.0" prefWidth="154.0" promptText="Tipo de ingresso" />
+                  <TextField fx:id="txtPrecoIngresso" layoutX="328.0" layoutY="125.0" prefHeight="25.0" prefWidth="160.0" promptText="Preco" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Cadastro de caravana">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane layoutX="21.0" layoutY="221.0">
+                     <content>
+                        <TextArea fx:id="taCaravana" prefHeight="132.0" prefWidth="598.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="btnSalvarCaravana" layoutX="21.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoCaravana" text="Salvar" />
+                  <TextField fx:id="txtCodigoCaravana" layoutX="21.0" layoutY="24.0" onAction="#acaoCaravana" promptText="Codigo da caravana" />
+                  <TextField fx:id="txtCapacidadeCaravana" layoutX="21.0" layoutY="84.0" promptText="Capacidade" />
+                  <TextField fx:id="txtPrecoCaravana" layoutX="192.0" layoutY="84.0" promptText="Preço" />
+                  <TextField fx:id="txtNomeCaravana" layoutX="192.0" layoutY="24.0" prefHeight="25.0" prefWidth="431.0" promptText="Nome da caravana" />
+                  <TextField fx:id="txtUfCaravana" layoutX="572.0" layoutY="84.0" prefHeight="25.0" prefWidth="51.0" promptText="UF" />
+                  <Button fx:id="btnListarCaravana" layoutX="179.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoCaravana" text="Listar" />
+                  <Button fx:id="btnAtualizarCaravana" layoutX="408.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoCaravana" text="Atualizar" />
+                  <Button fx:id="btnExcluirCaravana" layoutX="568.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoCaravana" text="Excluir" />
+                  <Button fx:id="btnVisualizarCaravana" layoutX="440.0" layoutY="364.0" mnemonicParsing="false" onAction="#acaoCaravana" text="Visualizar caravanas e eventos" />
+                  <Button fx:id="btnBuscarCaravana" layoutX="19.0" layoutY="364.0" mnemonicParsing="false" onAction="#acaoCaravana" text="Buscar" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Programação">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane layoutX="27.0" layoutY="227.0">
+                     <content>
+                        <TextArea fx:id="taProgramacao" prefHeight="156.0" prefWidth="593.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="btnSalvarProgramacao" layoutX="27.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoProgramacao" text="Salvar" />
+                  <TextField fx:id="txtCodigoProgramacao" layoutX="27.0" layoutY="30.0" onAction="#acaoProgramacao" promptText="Codigo" />
+                  <TextField fx:id="txtCodigoEvento_Programacao" layoutX="250.0" layoutY="30.0" promptText="Codigo do evento" />
+                  <TextField fx:id="txtNomeProgramacao" layoutX="26.0" layoutY="82.0" prefHeight="25.0" prefWidth="596.0" promptText="Nome da programação" />
+                  <TextField fx:id="txtHorarioProgramacao" layoutX="472.0" layoutY="30.0" promptText="Horario" />
+                  <Button fx:id="btnListarProgramacao" layoutX="188.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoProgramacao" text="Listar" />
+                  <Button fx:id="btnAtualizarProgramacao" layoutX="409.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoProgramacao" text="Atualizar" />
+                  <Button fx:id="btnExcluirProgramacao" layoutX="570.0" layoutY="186.0" mnemonicParsing="false" onAction="#acaoProgramacao" text="Excluir" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Comprar ingresso">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane layoutX="11.0" layoutY="199.0">
+                     <content>
+                        <TextArea fx:id="taCompra" prefHeight="157.0" prefWidth="624.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="btnSalvarCompra" layoutX="159.0" layoutY="166.0" mnemonicParsing="false" onAction="#acaoCompra" text="Salvar" />
+                  <TextField fx:id="txtCodigoCompra" layoutX="14.0" layoutY="24.0" onAction="#acaoCompra" prefHeight="25.0" prefWidth="128.0" promptText="Codigo da compra" />
+                  <TextField fx:id="txtNomeComprador" layoutX="159.0" layoutY="24.0" prefHeight="25.0" prefWidth="477.0" promptText="Nome do comprador" />
+                  <TextField fx:id="txtEmailCompra" layoutX="14.0" layoutY="62.0" prefHeight="25.0" prefWidth="622.0" promptText="E-mail" />
+                  <TextField fx:id="txtCodigoEvento_compra" layoutX="14.0" layoutY="100.0" prefHeight="25.0" prefWidth="128.0" promptText="Codigo do evento" />
+                  <TextField fx:id="txtCodigoIngresso_compra" layoutX="14.0" layoutY="132.0" prefHeight="25.0" prefWidth="128.0" promptText="Codigo do ingresso" />
+                  <TextField fx:id="txtCodigoCaravana_compra" layoutX="14.0" layoutY="166.0" prefHeight="25.0" prefWidth="128.0" promptText="Codigo da caravana" />
+                  <Button fx:id="btnListarCompra" layoutX="292.0" layoutY="166.0" mnemonicParsing="false" onAction="#acaoCompra" text="Listar" />
+                  <Button fx:id="btnAtualizarCompra" layoutX="423.0" layoutY="166.0" mnemonicParsing="false" onAction="#acaoCompra" text="Atualizar" />
+                  <Button fx:id="btnExcluirCompra" layoutX="583.0" layoutY="166.0" mnemonicParsing="false" onAction="#acaoCompra" text="Excluir" />
+                  <Button fx:id="btnVisualizarOpcao_compra" layoutX="529.0" layoutY="113.0" mnemonicParsing="false" onAction="#acaoCompra" text="Visualizar opções" />
+                  <Button fx:id="btnVisualizarCompra" layoutX="523.0" layoutY="361.0" mnemonicParsing="false" onAction="#acaoCompra" text="Visualizar compra" />
+                  <Label fx:id="lblInformacao" layoutX="377.0" layoutY="92.0" text="Se esqueceu dos códigos? Clique no botão de opções">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
